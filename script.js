@@ -65,8 +65,11 @@ const dialogCopy = {
     <p>Beim Aufruf dieser Website können technisch erforderliche Verbindungsdaten verarbeitet werden. Dazu gehören insbesondere IP-Adresse, Datum und Uhrzeit des Zugriffs, aufgerufene Datei, übertragene Datenmenge, Browsertyp, Betriebssystem und verweisende Seite. Die Verarbeitung ist erforderlich, um die Website sicher und fehlerfrei bereitzustellen.</p>
     <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der sicheren, stabilen und technisch funktionsfähigen Bereitstellung unseres Internetangebots. Server-Protokolldaten werden nur so lange gespeichert, wie dies für Betrieb, Sicherheit und Fehleranalyse erforderlich ist, und anschließend gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten bestehen.</p>
 
-    <h3>3. Cookies, Analyse und Formulare</h3>
-    <p>Diese Website setzt derzeit keine Analyse- oder Marketing-Cookies ein. Es werden keine Tracking-Dienste verwendet und auf dieser Website keine Kontakt- oder Registrierungsformulare angeboten.</p>
+    <h3>3. Meta Pixel</h3>
+    <p>Diese Website verwendet den Meta Pixel des sozialen Netzwerks Facebook. Der Meta Pixel wird beim Aufruf der Website geladen und erfasst, dass diese Seite besucht wurde. Dabei können insbesondere IP-Adresse, Browser- und Geräteinformationen, die aufgerufene Seite, Zeitpunkt des Aufrufs sowie technische Kennungen verarbeitet und Cookies oder vergleichbare Technologien eingesetzt werden.</p>
+    <p>Anbieter ist, abhängig vom Standort des Nutzers, Meta Platforms Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Irland, oder Meta Platforms, Inc., 1 Meta Way, Menlo Park, California 94025, USA. Die Verarbeitung dient der Messung der Wirksamkeit unserer Werbung, der Erstellung von Zielgruppen und der statistischen Auswertung von Seitenaufrufen. Daten können dabei auch außerhalb Ihres Aufenthaltslandes verarbeitet werden.</p>
+    <p>Weitere Informationen zur Datenverarbeitung und zu Ihren Einstellungsmöglichkeiten finden Sie in der <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Datenschutzrichtlinie von Meta</a>.</p>
+    <p>Auf dieser Website werden keine Kontakt- oder Registrierungsformulare angeboten.</p>
 
     <h3>4. Kontaktaufnahme</h3>
     <p>Wenn Sie uns telefonisch oder per E-Mail kontaktieren, verarbeiten wir die von Ihnen übermittelten Angaben zur Bearbeitung Ihrer Anfrage und möglicher Anschlussfragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit die Kommunikation der Anbahnung oder Durchführung eines Vertrags dient, andernfalls Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht in der sachgerechten Bearbeitung Ihrer Anfrage.</p>
