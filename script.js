@@ -5,6 +5,23 @@ const CONFIG = {
 const toast = document.querySelector(".toast");
 let toastTimer;
 
+function trackPixelEvent(eventName) {
+  if (typeof window.fbq === "function") {
+    window.fbq("trackCustom", eventName);
+  }
+}
+
+function trackVercelEvent(eventName) {
+  if (typeof window.va === "function") {
+    window.va("event", { name: eventName });
+  }
+}
+
+function trackEvent(eventName) {
+  trackPixelEvent(eventName);
+  trackVercelEvent(eventName);
+}
+
 function showToast(message) {
   toast.textContent = message;
   toast.classList.add("is-visible");
@@ -13,6 +30,10 @@ function showToast(message) {
 }
 
 document.querySelectorAll(".js-whatsapp").forEach((link) => {
+  link.addEventListener("click", () => {
+    trackEvent(link.dataset.pixelEvent);
+  });
+
   if (CONFIG.whatsappUrl) {
     link.href = CONFIG.whatsappUrl;
     link.target = "_blank";
@@ -25,6 +46,23 @@ document.querySelectorAll(".js-whatsapp").forEach((link) => {
     showToast("Der WhatsApp-Einladungslink wird vor der Veröffentlichung ergänzt.");
   });
 });
+
+["engaged_10s", "engaged_30s", "engaged_60s"].forEach((eventName, index) => {
+  window.setTimeout(() => trackEvent(eventName), [10000, 30000, 60000][index]);
+});
+
+const documentsTarget = document.querySelector(".transparency");
+if (documentsTarget && "IntersectionObserver" in window) {
+  let documentEventSent = false;
+  const documentsObserver = new IntersectionObserver((entries) => {
+    if (!documentEventSent && entries.some((entry) => entry.isIntersecting)) {
+      documentEventSent = true;
+      trackEvent("scroll_to_documents");
+      documentsObserver.disconnect();
+    }
+  }, { threshold: 0.35 });
+  documentsObserver.observe(documentsTarget);
+}
 
 const dialog = document.querySelector("#info-dialog");
 const dialogContent = dialog.querySelector(".dialog-content");
